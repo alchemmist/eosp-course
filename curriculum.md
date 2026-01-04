@@ -98,7 +98,7 @@ kanban-plugin: board
 - [ ] #idea Asking Mari about more time at last lecture or about going to resorunt in unformal format for making retro and celebrate
 
 
-## ???
+## Additionally
 
 - [ ] #note Create `CONTRIBUTING.md` guide
 - [ ] #note Write blog post about our project and share it on Habr, Medium, Devto
