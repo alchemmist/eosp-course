@@ -1,0 +1,3 @@
+[submodule "lib-demo"]
+	path = lib-demo
+	url = git@github-sub:flamelen/lib-demo.git
