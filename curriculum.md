@@ -10,7 +10,7 @@ kanban-plugin: board
 - [ ] #lecture What is OpenSource and why it important? Show examples of huge and popular projects and archived repositories
 - [ ] #lecture The idea and goal of our project. Architecture recap: `lib` → `cli` → `bot`
 - [ ] #lecture Motivation and mindset on course
-- [ ] #live-demo Creating organisation and repository on GitHub
+- [ ] #live-demo Creating organization and repository on GitHub
 - [ ] #lecture Introduction to GitHub API. Limitations
 - [ ] #live-demo Show the difference ways for working with GitHub API: `gh cli`, `curl`, `browser`, `requests`
 - [ ] #lecture How developing process in OpenSource looks like (GitHub Flow)
@@ -22,7 +22,7 @@ kanban-plugin: board
 
 ## Lecture 2
 
-- [ ] #homework Read loongreads about GitHub flow (lecture 1). And read loongread about testing on Python (preparing for lecture 2)
+- [ ] #homework Read longreads about GitHub flow (lecture 1). And read longread about testing on Python (preparing for lecture 2)
 - [ ] #lecture Learning how to work with the uv package manager
 - [ ] #lecture Why library is the core of the whole system. Library as lowest level interface
 - [ ] #lecture Review of `lib` repository structure and library design
@@ -30,7 +30,7 @@ kanban-plugin: board
 - [ ] #practice Students at pairs try to solve issue and sent pull request
 	(*I’m reject it because this haven’t tests and we start to talk about testing*)
 - [ ] #lecture Why testing is best way for up and hold code quality. The correct perception of testing: not privilege, base minimum. The image of protective wall.
-- [ ] #note Use learngowithtests course for preparing materials about testing
+- [ ] #note Use learn-go-with-tests course for preparing materials about testing
 - [ ] #lecture How to write tests on Python? Test Driven Development
 - [ ] #practice Students adding tests to their pull requests. (*They can swap code writer in pair*)
 - [ ] #note Announcement of next lecture
@@ -38,12 +38,12 @@ kanban-plugin: board
 
 ## Lecture 3
 
-- [ ] #homework Open at least one issue describing improvments, bugs or refactor
+- [ ] #homework Open at least one issue describing improvements, bugs or refactor
 - [ ] #homework Install the necessary tools and dependencies. Up the project locally
 - [ ] #lecture What is CI/CD and why it’s important for code quality
 - [ ] #live-demo Setup and trying CI/CD in `lib`
 - [ ] #live-demo How we build a new release of `lib` and publish it manually
-- [ ] #lecture How to make autodeploy release of `lib`
+- [ ] #lecture How to make auto-deploy release of `lib`
 - [ ] #lecture What is cli: commands, flags, exit codes. Difference between gui, tui and cli
 - [ ] #lecture Why CLI exists: when library is not useful
 - [ ] #lecture Show examples of very popular cli
@@ -56,7 +56,7 @@ kanban-plugin: board
 - [ ] #homework Write a documentation for library at GitHub wiki
 - [ ] #homework Make pull request with `LICENSE` to our repose and justify why this type of license is suitable for us
 - [ ] #lecture How to write a cli with `click` python library
-- [ ] #lecture Review of `cli` repository strucure
+- [ ] #lecture Review of `cli` repository structure
 - [ ] #live-demo Setup auto deploy on release of `cli`
 - [ ] #lecture How telegram bots works in general
 - [ ] #lecture How (and why) to use `python-telegram-bot` for creating telegram bots
@@ -78,7 +78,7 @@ kanban-plugin: board
 - [ ] #lecture Fast intro to docker
 - [ ] #live-demo How to deploy `bot` manually
 - [ ] #lecture How to make auto deploy on release of `bot`
-- [ ] #practice Common make a draft of pitching and slideck
+- [ ] #practice Common make a draft of pitching and slide deck
 - [ ] #lecture Hacks about how to make a good pitching
 - [ ] #lecture Hacks about how to make a good slide deck
 - [ ] #note Announcement of next lecture
@@ -97,15 +97,15 @@ kanban-plugin: board
 
 - [ ] #practice Common mock pitch defense
 - [ ] #note Make a retro. Discussion about future of project. Pizza!
-- [ ] #idea Asking Mari about more time at last lecture or about going to resorunt in unformal format for making retro and celebrate
+- [ ] #idea Asking Mari about more time at last lecture or about going to restaurant in informal format for making retro and celebrate
 
 
 ## Additionally
 
-- [ ] #lecture `Makefile` as entry point into repository and foundation of repository automatisation
+- [ ] #lecture `Makefile` as entry point into repository and foundation of repository automation
 - [ ] #note Create `CONTRIBUTING.md` guide
 - [ ] #note Write blog post about our project and share it on Habr, Medium, Devto
-- [ ] #idea At final steps make repositories vary comfartbale for new contribution and after that invite CU students and not only to this project
+- [ ] #idea At final steps make repositories vary comfortable for new contribution and after that invite CU students and not only to this project
 - [ ] #idea collect GitHub data and make a study
 - [ ] #idea Invite external reviewer (not teacher) to leave harsh feedback on repo
 - [ ] #idea Make GitHub Discussions enabled and seed first questions
