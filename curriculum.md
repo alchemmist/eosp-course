@@ -102,6 +102,7 @@ kanban-plugin: board
 
 ## Additionally
 
+- [ ] #lecture `Makefile` as entry point into repository and foundation of repository automatisation
 - [ ] #note Create `CONTRIBUTING.md` guide
 - [ ] #note Write blog post about our project and share it on Habr, Medium, Devto
 - [ ] #idea At final steps make repositories vary comfartbale for new contribution and after that invite CU students and not only to this project
