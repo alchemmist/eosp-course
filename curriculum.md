@@ -28,7 +28,7 @@ kanban-plugin: board
 - [ ] #lecture Review of `lib` repository structure and library design
 - [ ] #live-demo - Adding first metric end-to-end (API → logic → test)
 - [ ] #practice Students at pairs try to solve issue and sent pull request
- (*I’m reject it because this haven’t tests and we start to talk about testing*)
+	(*I’m reject it because this haven’t tests and we start to talk about testing*)
 - [ ] #lecture Why testing is best way for up and hold code quality. The correct perception of testing: not privilege, base minimum. The image of protective wall.
 - [ ] #note Use learn-go-with-tests course for preparing materials about testing
 - [ ] #lecture How to write tests on Python? Test Driven Development
@@ -105,6 +105,11 @@ kanban-plugin: board
 - [ ] #lecture `Makefile` as entry point into repository and foundation of repository automation
 - [ ] #note Create `CONTRIBUTING.md` guide
 - [ ] #note Write blog post about our project and share it on Habr, Medium, Devto
+- [ ] #note Use for PR: https://github.com/decentralizedlabs/pr-codex
+- [ ] #note Use for PR:
+	https://about.codecov.io/
+- [ ] #note A few words about puzzle driven development
+- [ ] #note Start all lectures (except first) from remind of previous lectures
 - [ ] #idea At final steps make repositories vary comfortable for new contribution and after that invite CU students and not only to this project
 - [ ] #idea collect GitHub data and make a study
 - [ ] #idea Invite external reviewer (not teacher) to leave harsh feedback on repo
@@ -113,15 +118,12 @@ kanban-plugin: board
 - [ ] #idea Do a public call for feedback on Reddit / Telegram / Discord
 - [ ] #idea Add badges that actually mean something (coverage, release cadence)
 - [ ] #idea Connect AI for analyze PRs or user profile
-- [ ] #note A few words about puzzle driven development
 
 
 
 
 %% kanban:settings
-
 ```
 {"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false,false,false,false]}
 ```
-
 %%
