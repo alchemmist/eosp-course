@@ -12,7 +12,7 @@ spell:
 
 lint:
 	markdownlint-cli2 . --fix
-	chktex syllabus/**/*.tex
+	chktex $(TEXFILES)
 
 build: $(PDFDIR)
 	for f in $(TEXFILES); do \

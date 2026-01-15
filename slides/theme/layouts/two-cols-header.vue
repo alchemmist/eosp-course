@@ -30,7 +30,8 @@ const props = defineProps({
   layoutClass: {
     type: String,
   },
-})
+});
+import Footer from '../components/Footer.vue'
 </script>
 
 <template>
@@ -48,6 +49,7 @@ const props = defineProps({
       <slot name="bottom" />
     </div>
   </div>
+  <Footer :date="date" />
 </template>
 
 <style scoped>
@@ -69,5 +71,9 @@ const props = defineProps({
 .col-bottom {
   align-self: end;
   grid-area: 3 / 1 / 3 / 3;
+}
+
+.two-cols-header {
+  column-gap: 20px;
 }
 </style>

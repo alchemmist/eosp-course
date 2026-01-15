@@ -5,10 +5,10 @@
       <p class="italic mono-text">
         «{{ text }}»
       </p>
-      <span class="mt-2 font-semibold text-gray-800">{{ author }}</span>
+      <span class="mt-2 font-semibold text-gray-800 text-sm">{{ author }}</span>
       <span class="text-sm text-gray-400" v-if="source">
         {{ type }} 
-        <a v-if="sourceUrl" :href="sourceUrl" class="text-gray-500 hover:text-gray-800">{{ source }}</a>
+        <a v-if="sourceUrl" :href="sourceUrl" class="text-gray-500 hover:text-gray-800">«{{ source }}»</a>
         <span v-else>{{ source }}</span>, {{ year }}
       </span>
     </div>

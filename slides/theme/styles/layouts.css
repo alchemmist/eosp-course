@@ -37,6 +37,9 @@
     @apply opacity-40;
   }
   padding-bottom: 0;
+  padding-top: 3rem;
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
 }
 
 .slidev-layout.cover,
@@ -65,11 +68,18 @@
   }
 }
 
-.slidev-layout.quote {
+.slidev-layout.image-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .slidev-layout.section {
   h1 {
     @apply text-6xl font-500 leading-20;
   }
+}
+
+.slidev-layout.two-cols {
+  gap: 1cm;
 }

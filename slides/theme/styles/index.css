@@ -20,12 +20,13 @@
 }
 
 :root {
-  font-size: 14px;
+  font-size: 12px;
 }
+
 
 .slidev-note :not(pre) > code,
 .slidev-layout :not(pre) > code {
-  padding: 0.3rem 0 !important;
+  padding: 0.1rem 0.3rem !important;
 }
 
 .mono-text {
@@ -49,3 +50,23 @@
   opacity: 0.5;
 }
 
+.slidev-monaco-container {
+  width: 500px !important;
+}
+
+.left-image img {
+  object-fit: cover;
+  object-position: left;
+}
+
+.slidev-layout li {
+  line-height: 1.2em !important;
+}
+
+.slidev-layout ul {
+  list-style: square;
+  gap: 0.9em;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em;
+}
