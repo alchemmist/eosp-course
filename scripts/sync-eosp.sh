@@ -7,15 +7,15 @@ DST_BASE="$HOME/code/eosp"
 echo "Sync curriculum.md"
 rsync -av \
   "$SRC_BASE/curriculum.md" \
-  "$DST_BASE/curriculum.md"
+  "$DST_BASE/pages/curriculum/curriculum.md"
 
 echo "Sync testing-form.md"
 rsync -av \
   "$SRC_BASE/testing-form.md" \
   "$DST_BASE/testing-form.md"
 
-echo "Sync loongreads directory"
+echo "Sync longreads directory"
 rsync -av --delete \
-  "$SRC_BASE/loongreads/" \
-  "$DST_BASE/loongreads/"
+  "$SRC_BASE/longreads/" \
+  "$DST_BASE/longreads/"
 

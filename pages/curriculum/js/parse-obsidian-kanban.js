@@ -1,5 +1,5 @@
 async function loadCurriculum() {
-  const md = await fetch("curriculum.md").then((r) => r.text());
+  const md = await fetch("/eosp/curriculum/curriculum.md").then((r) => r.text());
   const lines = md.split("\n");
 
   const boards = [];
