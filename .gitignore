@@ -31,3 +31,11 @@ venv
 *.bbl
 *.run.xml
 syllabus/*.pdf
+
+# Local build output
+/build/
+
+# Slidev cache
+slides/.slidev/
+slides/dist/
+

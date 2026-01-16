@@ -1,7 +1,10 @@
 TEXFILES := $(wildcard syllabus/*.tex)
 SLIDES := $(wildcard slides/*-lecture.*.md)
-PDFDIR := pages/pdf
-LECTURE_PAGES := pages/lectures
+
+OUTDIR ?= build
+
+PDFDIR := $(OUTDIR)/pdf
+LECTURE_PAGES := $(OUTDIR)/lectures
 
 all: lint
 
@@ -22,14 +25,26 @@ build: $(PDFDIR) $(LECTURE_PAGES)
 	done
 	for s in $(SLIDES); do \
 		base=$$(basename $$s .md); \
-		cd slides && yarn run slidev export --format pdf --output "../$(PDFDIR)/$$base.pdf" "$$(basename $$s)"; \
-	done
+		( \
+		cd slides && \
+		yarn run slidev export \
+		--format pdf \
+			--output "../$(PDFDIR)/$$base.pdf" \
+			"$$(basename $$s)" \
+			); \
+		done
 	for s in $(SLIDES); do \
 		base=$$(basename $$s .md); \
 		outname=$${base//./-}; \
 		outdir="../$(LECTURE_PAGES)/$$outname"; \
 		mkdir -p $$outdir; \
-		cd slides && yarn run slidev build --out $$outdir --base /eosp/lectures/$$outname/ "$$(basename $$s)"; \
+		( \
+		cd slides && \
+		yarn run slidev build \
+		--out $$outdir \
+		--base /eosp/lectures/$$outname/ \
+		"$$(basename $$s)" \
+		); \
 	done
 
 $(PDFDIR):
@@ -39,6 +54,5 @@ $(LECTURE_PAGES):
 	mkdir -p $(LECTURE_PAGES)
 
 clean:
+	rm -rf build
 	rm -f syllabus/*.aux syllabus/*.log syllabus/*.toc syllabus/*.out syllabus/*.pdf
-	rm -rf $(PDFDIR)/*
-	rm -rf $(LECTURE_PAGES)/*

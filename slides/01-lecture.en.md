@@ -15,6 +15,7 @@ drawings:
   persist: false
 transition: slide-left
 mdc: true
+favicon: 'https://cdn.jsdelivr.net/gh/alchemmist/blog@main/site/static/favicon.ico'
 duration: 35min
 date: February 18th, 2026
 layout: intro
@@ -404,6 +405,7 @@ Raw HTTP requests from terminal.
 ::left::
 
 <div v-click>
+
 Send GET authenticated request:
 
 ```sh
@@ -477,6 +479,7 @@ Efficient, parallel, production-ready requests.
 ::left::
 
 <div v-click>
+
 Example with <code>httpx</code>:
 
 ```python
@@ -549,7 +552,7 @@ Understanding these limits is essential when building scalable, reliable systems
 
 ---
 layout: two-cols-header
-gap: 60px
+gap: 50px
 ---
 
 # Developing flows <MarkerX color="#FF7F50" title="github-flow" />
@@ -777,3 +780,7 @@ layout: center
 <li v-click>Automate as much as possible → CI/CD, tests, linters, code quality checks</li>
 <li v-click>Encourage <b>review culture</b> → better code, knowledge sharing, accountability</li>
 </ul>
+
+---
+layout: end
+---
