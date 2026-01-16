@@ -105,13 +105,12 @@ kanban-plugin: board
 - [ ] #lecture `Makefile` as entry point into repository and foundation of repository automation
 - [ ] #lecture Introduction to Asynchronous Programming in Python
 - [ ] #note Create `CONTRIBUTING.md` guide
-- [ ] #note Create `CODE_OF_CONDACT.md` guide
+- [ ] #note Create `CODE_OF_CONDUCT.md` guide
 - [ ] #note Write blog post about our project and share it on Habr, Medium, Devto
 - [ ] #note How to make a releases and versioning you product: <https://semver.org/>
 - [ ] #note Use for PR: <https://github.com/decentralizedlabs/pr-codex>
  
  Or this: <https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review>
-
 - [ ] #note Use for PR:
  <https://about.codecov.io/>
 - [ ] #note A few words about puzzle driven development
