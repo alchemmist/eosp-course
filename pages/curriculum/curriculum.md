@@ -27,7 +27,7 @@ kanban-plugin: board
 - [ ] #lecture Review of `lib` repository structure and library design
 - [ ] #live-demo - Adding first metric end-to-end (API → logic → test)
 - [ ] #practice Students at pairs try to solve issue and sent pull request
- (*I’m reject it because this haven’t tests and we start to talk about testing*)
+	(*I’m reject it because this haven’t tests and we start to talk about testing*)
 - [ ] #lecture Why testing is best way for up and hold code quality. The correct perception of testing: not privilege, base minimum. The image of protective wall.
 - [ ] #note Use learn-go-with-tests course for preparing materials about testing
 - [ ] #lecture How to write tests on Python? Test Driven Development
@@ -102,17 +102,18 @@ kanban-plugin: board
 
 ## Additionally
 
+- [ ] #homework Make a templates for issues in repo. For new contributors
 - [ ] #lecture `Makefile` as entry point into repository and foundation of repository automation
 - [ ] #lecture Introduction to Asynchronous Programming in Python
 - [ ] #note Create `CONTRIBUTING.md` guide
 - [ ] #note Create `CODE_OF_CONDUCT.md` guide
 - [ ] #note Write blog post about our project and share it on Habr, Medium, Devto
-- [ ] #note How to make a releases and versioning you product: <https://semver.org/>
-- [ ] #note Use for PR: <https://github.com/decentralizedlabs/pr-codex>
- 
- Or this: <https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review>
+- [ ] #note How to make a releases and versioning you product: https://semver.org/
+- [ ] #note Use for PR: https://github.com/decentralizedlabs/pr-codex
+	
+	Or this: https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review
 - [ ] #note Use for PR:
- <https://about.codecov.io/>
+	https://about.codecov.io/
 - [ ] #note A few words about puzzle driven development
 - [ ] #note Start all lectures (except first) from remind of previous lectures
 - [ ] #idea At final steps make repositories vary comfortable for new contribution and after that invite CU students and not only to this project
@@ -128,9 +129,7 @@ kanban-plugin: board
 
 
 %% kanban:settings
-
 ```
 {"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false,false,false,false]}
 ```
-
 %%
