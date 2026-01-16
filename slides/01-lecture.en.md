@@ -18,6 +18,7 @@ mdc: true
 favicon: 'https://cdn.jsdelivr.net/gh/alchemmist/blog@main/site/static/favicon.ico'
 duration: 35min
 date: February 18th, 2026
+remoteAssets: false
 layout: intro
 themeConfig:
   paginationX: r

@@ -30,6 +30,8 @@ build: $(PDFDIR) $(LECTURE_PAGES)
 		( \
 		cd slides && \
 		yarn run slidev export \
+		--wait 100000 \
+		--wait-until load \
 		--format pdf \
 			--output "../$(PDFDIR)/$$base.pdf" \
 			"$$(basename $$s)" \
