@@ -1,6 +1,6 @@
 TEXFILES := $(wildcard syllabus/*.tex)
-SLIDES := $(wildcard slides/*-lecture.md)
-PDFDIR := pdf
+SLIDES := $(wildcard slides/*-lecture.*.md)
+PDFDIR := pages/pdf
 LECTURE_PAGES := pages/lectures
 
 all: lint
@@ -18,6 +18,7 @@ lint:
 build: $(PDFDIR) $(LECTURE_PAGES)
 	for f in $(TEXFILES); do \
 		pdflatex -interaction=nonstopmode -output-directory=syllabus "$$f"; \
+		mv syllabus/$$(basename $$f .tex).pdf $(PDFDIR)/; \
 	done
 	for s in $(SLIDES); do \
 		base=$$(basename $$s .md); \
@@ -25,9 +26,10 @@ build: $(PDFDIR) $(LECTURE_PAGES)
 	done
 	for s in $(SLIDES); do \
 		base=$$(basename $$s .md); \
-		outdir="../$(LECTURE_PAGES)/$$base"; \
+		outname=$${base//./-}; \
+		outdir="../$(LECTURE_PAGES)/$$outname"; \
 		mkdir -p $$outdir; \
-		cd slides && yarn run slidev build --out $$outdir --base /eosp/lectures/$$base/ "$$(basename $$s)"; \
+		cd slides && yarn run slidev build --out $$outdir --base /eosp/lectures/$$outname/ "$$(basename $$s)"; \
 	done
 
 $(PDFDIR):
