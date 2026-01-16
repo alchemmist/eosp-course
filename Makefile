@@ -1,3 +1,5 @@
+SHELL := /usr/bin/env bash
+
 TEXFILES := $(wildcard syllabus/*.tex)
 SLIDES := $(wildcard slides/*-lecture.*.md)
 
