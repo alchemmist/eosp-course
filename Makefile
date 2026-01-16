@@ -27,7 +27,7 @@ build: $(PDFDIR) $(LECTURE_PAGES)
 		base=$$(basename $$s .md); \
 		outdir="../$(LECTURE_PAGES)/$$base"; \
 		mkdir -p $$outdir; \
-		cd slides && yarn run slidev build --out $$outdir --base /lectures/$$base/ "$$(basename $$s)"; \
+		cd slides && yarn run slidev build --out $$outdir --base /eosp/lectures/$$base/ "$$(basename $$s)"; \
 	done
 
 $(PDFDIR):
