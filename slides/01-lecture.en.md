@@ -393,7 +393,7 @@ layout: full
 
 # More in [documentation](https://cli.github.com/manual/gh_api)<MarkerX color="#5d3fd3" title="api" />
 
-<img src="/assets/gh-cli-doc.png" />
+<Image src="/assets/gh-cli-doc.png" />
 
 ---
 layout: two-cols-header

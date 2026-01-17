@@ -97,7 +97,7 @@ kanban-plugin: board
 
 - [ ] #practice Common mock pitch defense
 - [ ] #note Make a retro. Discussion about future of project. Pizza!
-- [ ] #idea Asking Mari about more time at last lecture or about going to restaurant in informal format for making retro and celebrate
+- [ ] #idea Asking Mari about more time at last lecture or about  informal format for making retro and celebrate
 
 
 ## Additionally
