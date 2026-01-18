@@ -469,7 +469,7 @@ layout: full
 
 # Подробнее в [документации](https://docs.github.com/en/rest)<MarkerX color="#5d3fd3" title="api" />
 
-<img src="/assets/github-api-doc.png" />
+<Image src="/assets/github-api-doc.png" />
 
 ---
 layout: two-cols-header

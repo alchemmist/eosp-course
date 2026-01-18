@@ -15,7 +15,7 @@ drawings:
   persist: false
 transition: slide-left
 mdc: true
-favicon: 'https://cdn.jsdelivr.net/gh/alchemmist/blog@main/site/static/favicon.ico'
+favicon: "https://cdn.jsdelivr.net/gh/alchemmist/blog@main/site/static/favicon.ico"
 duration: 35min
 date: February 18th, 2026
 remoteAssets: false
@@ -467,7 +467,7 @@ layout: full
 
 # More in [documentation](https://cli.github.com/manual/gh_api)<MarkerX color="#5d3fd3" title="api" />
 
-<img src="/assets/github-api-doc.png" />
+<Image src="/assets/github-api-doc.png" />
 
 ---
 layout: two-cols-header
