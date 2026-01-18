@@ -29,6 +29,7 @@ kanban-plugin: board
 - [ ] #practice Students at pairs try to solve issue and sent pull request
 	(*I’m reject it because this haven’t tests and we start to talk about testing*)
 - [ ] #lecture Why testing is best way for up and hold code quality. The correct perception of testing: not privilege, base minimum. The image of protective wall.
+- [ ] #note Tell interesting thing: in Postgres, which we looked in previous lecture, count of unit testing limited and you can’t write a unit test if it not essential. This making for test checking passing fast.
 - [ ] #note Use learn-go-with-tests course for preparing materials about testing
 - [ ] #lecture How to write tests on Python? Test Driven Development
 - [ ] #practice Students adding tests to their pull requests. (*They can swap code writer in pair*)
