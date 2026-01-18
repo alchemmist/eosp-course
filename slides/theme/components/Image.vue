@@ -12,34 +12,36 @@ const props = defineProps({
   style: { type: Object as () => Record<string, string>, default: () => ({}) },
 });
 
+// берём base URL автоматически
 const resolvedSrc = computed(() => {
-  if (props.src.startsWith("/")) return props.src
-  return `/assets/${props.src}`
+  const base = import.meta.env.BASE_URL || "/"
+  const srcPath = props.src.startsWith("/") ? props.src.slice(1) : props.src
+  return `${base}${srcPath}`
 })
 
-const imgAspect = ref<number | null>(null);
+const imgAspect = ref<number | null>(null)
 const loadImage = () => {
-  const img = new Image();
-  img.src = resolvedSrc.value;
+  const img = new Image()
+  img.src = resolvedSrc.value
   img.onload = () => {
-    imgAspect.value = img.naturalHeight / img.naturalWidth;
-  };
-};
-loadImage();
+    imgAspect.value = img.naturalHeight / img.naturalWidth
+  }
+}
+loadImage()
 
 const backgroundStyle = computed(() => {
   const style: Record<string, string> = {
     ...handleBackground(resolvedSrc.value, props.dim, props.backgroundSize),
     width: props.width ?? "100%",
     ...props.style,
-  };
-
-  if (imgAspect.value) {
-    style.aspectRatio = `${1 / imgAspect.value}`;
   }
 
-  return style;
-});
+  if (imgAspect.value) {
+    style.aspectRatio = `${1 / imgAspect.value}`
+  }
+
+  return style
+})
 </script>
 
 <template>
