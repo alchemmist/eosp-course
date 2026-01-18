@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import { handleBackground, resolveAssetUrl } from "../layoutHelper";
+import { handleBackground } from "../layoutHelper";
 
 const props = defineProps({
   src: { type: String, required: true },
@@ -12,27 +12,30 @@ const props = defineProps({
   style: { type: Object as () => Record<string, string>, default: () => ({}) },
 });
 
-const imgAspect = ref<number | null>(null);
-const resolvedSrc = resolveAssetUrl(props.src);
+// resolvedSrc безопасно для dev и build
+const resolvedSrc = computed(() => new URL(props.src, import.meta.url).href);
 
+// natural aspect ratio
+const imgAspect = ref<number | null>(null);
 const loadImage = () => {
   const img = new Image();
-  img.src = resolvedSrc;
+  img.src = resolvedSrc.value;
   img.onload = () => {
     imgAspect.value = img.naturalHeight / img.naturalWidth;
   };
 };
 loadImage();
 
+// style для div с background-image
 const backgroundStyle = computed(() => {
   const style: Record<string, string> = {
-    ...handleBackground(resolvedSrc, props.dim, props.backgroundSize),
+    ...handleBackground(resolvedSrc.value, props.dim, props.backgroundSize),
     width: props.width ?? "100%",
     ...props.style,
   };
 
   if (imgAspect.value) {
-    style.aspectRatio = `${1 / imgAspect.value}`; // width/height
+    style.aspectRatio = `${1 / imgAspect.value}`; // width / height
   }
 
   return style;

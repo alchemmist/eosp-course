@@ -16,7 +16,7 @@ drawings:
 transition: slide-left
 mdc: true
 duration: 35min
-favicon: 'https://cdn.jsdelivr.net/gh/alchemmist/blog@main/site/static/favicon.ico'
+favicon: "https://cdn.jsdelivr.net/gh/alchemmist/blog@main/site/static/favicon.ico"
 date: 18 февраля 2026
 layout: intro
 themeConfig:
@@ -649,6 +649,12 @@ gitGraph
 
 </div>
 
+<style scoped>
+.two-cols-header {
+  column-gap: 10cm !important;
+}
+</style>
+
 ---
 layout: center
 ---
@@ -705,7 +711,7 @@ layout: center
 layout: two-cols
 ---
 
-<style>
+<style scoped>
 .col-right {
   display: flex;
   flex-direction: row-reverse;

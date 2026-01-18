@@ -8,29 +8,29 @@ export function resolveAssetUrl(url: string) {
   return url;
 }
 
+import type { CSSProperties } from "vue";
+
 export function handleBackground(
   background?: string,
   dim = false,
-  backgroundPosition: string = "center center",
-  backgroundSize: string = "cover",
-  backgroundRepeat: string = "no-repeat",
+  backgroundSize = "cover",
 ): CSSProperties {
+  const isString = typeof background === "string";
   const isColor =
-    background && ["#", "rgb", "hsl"].some((v) => background.indexOf(v) === 0);
+    isString && (background[0] === "#" || background.startsWith("rgb"));
 
-  const style = {
+  const style: CSSProperties = {
     background: isColor ? background : undefined,
-    color: background && !isColor ? "white" : undefined,
-    backgroundImage: isColor
-      ? undefined
-      : background
+    color: isString && !isColor ? "white" : undefined,
+    backgroundImage:
+      isString && !isColor
         ? dim
-          ? `linear-gradient(#0005, #0008), url(${resolveAssetUrl(background)})`
-          : `url("${resolveAssetUrl(background)}")`
+          ? `linear-gradient(#0005, #0008), url(${background})`
+          : `url("${background}")`
         : undefined,
-    backgroundRepeat: backgroundRepeat,
-    backgroundPosition: backgroundPosition,
-    backgroundSize: backgroundSize,
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    backgroundSize,
   };
 
   if (!style.background) delete style.background;

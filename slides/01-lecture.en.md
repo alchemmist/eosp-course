@@ -658,7 +658,7 @@ gitGraph
 
 </div>
 
-<style>
+<style scoped>
 .two-cols-header {
   column-gap: 10cm !important;
 }
@@ -720,7 +720,7 @@ Approved PR is merged into main and usually triggers deployment.
 layout: two-cols
 ---
 
-<style>
+<style scoped>
 .col-right {
   display: flex;
   flex-direction: row-reverse;
