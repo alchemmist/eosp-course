@@ -12,7 +12,6 @@ const props = defineProps({
   style: { type: Object as () => Record<string, string>, default: () => ({}) },
 });
 
-// берём base URL автоматически
 const resolvedSrc = computed(() => {
   const base = import.meta.env.BASE_URL || "/"
   const srcPath = props.src.startsWith("/") ? props.src.slice(1) : props.src

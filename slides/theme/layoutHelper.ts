@@ -8,8 +8,6 @@ export function resolveAssetUrl(url: string) {
   return url;
 }
 
-import type { CSSProperties } from "vue";
-
 export function handleBackground(
   background?: string,
   dim = false,
