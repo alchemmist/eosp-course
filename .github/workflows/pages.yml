@@ -38,23 +38,19 @@ jobs:
             texlive-lang-cyrillic
 
       # ---------- Node ----------
-      - uses: pnpm/action-setup@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          version: 10
-
-      - name: Allow pnpm build scripts
-        run: pnpm config set ignore-scripts false
+          node-version: 20
+          cache: yarn
 
       - name: Install root dependencies
-        run: pnpm install --frozen-lockfile
+        run: yarn install --frozen-lockfile
 
-      - name: Install slides dependencies
-        working-directory: slides
-        run: pnpm install --no-frozen-lockfile --ignore-workspace
-
-      - name: Install Playwright browsers
-        working-directory: slides
-        run: pnpm exec playwright install --with-deps chromium
+      - name: Install slidev dependencies
+        run: |
+          cd slides
+          yarn install --frozen-lockfile
 
       # ---------- Build ----------
       - name: Build site

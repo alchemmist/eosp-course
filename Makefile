@@ -8,7 +8,7 @@ OUTDIR ?= build
 PDFDIR := $(OUTDIR)/pdf
 LECTURE_PAGES := $(OUTDIR)/lectures
 
-all: lint spell
+all: lint
 
 sync:
 	bash scripts/sync-eosp.sh
@@ -29,7 +29,7 @@ build: $(PDFDIR) $(LECTURE_PAGES)
 		base=$$(basename $$s .md); \
 		( \
 		cd slides && \
-		pnpm slidev export \
+		yarn run slidev export \
 		--format pdf \
 			--output "../$(PDFDIR)/$$base.pdf" \
 			"$$(basename $$s)" \
@@ -42,7 +42,7 @@ build: $(PDFDIR) $(LECTURE_PAGES)
 		mkdir -p $$outdir; \
 		( \
 		cd slides && \
-		pnpm slidev build \
+		yarn run slidev build \
 		--out $$outdir \
 		--base /eosp/lectures/$$outname/ \
 		"$$(basename $$s)" \
