@@ -510,7 +510,6 @@ Example with <code>httpx</code>:
 ```python
 import asyncio, httpx
 
-
 async def fetch_prs(username):
     url = f"https://api.github.com/search/issues?"\
           f"q=author:{username}+type:pr+created:>2025-01-01"
@@ -524,7 +523,6 @@ async def fetch_prs(username):
         data = resp.json()
         for pr in data["items"]:
             print(f"{pr['title']}\n\t-> {pr['html_url']}")
-
 
 asyncio.run(fetch_prs("alchemmist"))
 ```
@@ -542,7 +540,7 @@ Add alchemmist.xyz individual blog
 Add alchemmist.xyz personal blog
 	-> https://github.com/learn-anything/blogs/pull/21
 Add alchemmist.xyz blog
-	-> https://github.com/logancyang/awesome-personal-websites/pull/1
+	-> https://github.com/logancyang/awesome-pers...
 Add alchemmist.xyz blog
 	-> https://github.com/jkup/awesome-personal-blogs/pull/173
 Add @alchemmist_blog to personal blogs section
@@ -686,12 +684,6 @@ gitGraph
 
 </div>
 
-<style scoped>
-.two-cols-header {
-  column-gap: 10cm !important;
-}
-</style>
-
 <Footer slot="footer" />
 
 ---
@@ -755,7 +747,7 @@ layout: two-cols
 ---
 
 <style scoped>
-.col-right {
+:deep(.col-right) {
   display: flex;
   flex-direction: row-reverse;
 }
@@ -770,7 +762,7 @@ Visual representation of the workflow:
   <li v-click>Creates a branch from <code>main</code> for the issue</li>
   <li v-click>Makes <b>commits</b> locally and pushes to GitHub</li>
   <li v-click>Opens a <b>pull request</b> linking to the issue</li>
-  <li v-click>Team conducts <b>code review</b> and automated **CI/CD checks**</li>
+  <li v-click>Team conducts <b>code review</b> and automated <b>CI/CD checks</b></li>
   <li v-click>After approval, PR is merged into <code>main</code></li>
   <li v-click>Deployment triggers automatically (if CI/CD is configured)</li>
 </ol>
